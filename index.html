@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ministry of Digital Infrastructure | Government of India</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- TOP BAND with security placeholder -->
+    <div class="top-band">
+        <div class="container">
+            <div class="emblem-gov">
+                <img src="assets/images/emblem.svg" alt="Government of India Emblem" class="emblem-icon">
+                <span>भारत सरकार | GOVERNMENT OF INDIA</span>
+            </div>
+            <div class="security-badge">
+                <i class="fas fa-shield-halved"></i>
+                <span>SECURE CONNECTION | AES-256 | HTTPS (TLS 1.3)</span>
+                <i class="fas fa-lock"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <div class="navbar">
+        <div class="container nav-container">
+            <div class="logo-area">
+                <i class="fas fa-landmark" style="font-size: 2.8rem; color: #1e3c72;"></i>
+                <div class="ministry-name">
+                    <h1>Ministry of Digital Infrastructure</h1>
+                    <p>सूचना एवं प्रौद्योगिकी विभाग | Innovation & Security Division</p>
+                </div>
+            </div>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Security</a>
+                <a href="#">Network</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="graphic-wave"></div>
+
+    <div class="container">
+        <!-- HERO SECTION with officials pictures -->
+        <div class="hero">
+            <div class="hero-grid">
+                <div class="hero-content animate-fade-up">
+                    <span class="badge-gov"><i class="fas fa-indian-rupee-sign"></i> Digital India • सेवा परक</span>
+                    <h2>Secure, Scalable, <br>Citizen-First Governance</h2>
+                    <p style="margin: 18px 0; max-width: 500px;">Integration of next-gen security protocols, AI firewalls, and high-availability networks across all stacks.</p>
+                    
+                    <!-- BACKEND INTEGRATION PLACEHOLDER (illustrative) -->
+                    <div class="comment-placeholder">
+                        <i class="fas fa-database"></i> 
+                        <strong>// BACKEND ENDPOINT (illustrative):</strong> /api/v1/health | DB: postgresql://gov-db.internal | Redis cache active | JWT validator 🔒
+                    </div>
+                </div>
+                
+                <div class="officials-grid">
+                    <!-- Govt Officials -->
+                    <div class="official-card animate-fade-up delay-1">
+                        <div class="placeholder-img">
+                            <img src="assets/images/officials/minister.svg" alt="Shri Arvind Singh" onerror="this.src='assets/images/placeholders/official1.png'">
+                        </div>
+                        <h4>Shri. Arvind Singh</h4>
+                        <p>Minister of State (DI)</p>
+                        <i class="fas fa-verified" style="color: #1e7e34;"></i>
+                    </div>
+                    
+                    <div class="official-card animate-fade-up delay-2">
+                        <div class="placeholder-img">
+                            <img src="assets/images/officials/secretary.svg" alt="Dr. Meena Sharma" onerror="this.src='assets/images/placeholders/official2.png'">
+                        </div>
+                        <h4>Dr. Meena Sharma</h4>
+                        <p>Secretary (Technology)</p>
+                    </div>
+                    
+                    <div class="official-card animate-fade-up delay-3">
+                        <div class="placeholder-img">
+                            <img src="assets/images/officials/joint-secy.svg" alt="Ms. Neelam Desai" onerror="this.src='assets/images/placeholders/official3.png'">
+                        </div>
+                        <h4>Ms. Neelam Desai</h4>
+                        <p>Joint Secy. (Network Ops)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECURITY FEATURE PLACEHOLDERS -->
+        <div class="security-dashboard">
+            <div class="security-card animate-fade-up delay-2">
+                <i class="fas fa-shield-halved"></i>
+                <h3>Web Application Firewall</h3>
+                <div class="status"><span class="green-dot"></span> Active - 0 threats blocked today</div>
+                <div class="comment-placeholder" style="background: #e0ebf9;">
+                    <i class="fas fa-cloud"></i> WAF + rate limiting: 1000 req/min | OWASP rules enabled (illustrative config)
+                </div>
+            </div>
+            
+            <div class="security-card animate-fade-up delay-3">
+                <i class="fas fa-key"></i>
+                <h3>PKI & Authentication</h3>
+                <div class="status"><span class="green-dot"></span> 2FA enabled for all officials</div>
+                <div class="comment-placeholder" style="background: #e0ebf9;">
+                    <i class="fas fa-id-card"></i> Smart-card integration | OAuth 2.0 / OpenID Connect (illustrative)
+                </div>
+            </div>
+            
+            <div class="security-card animate-fade-up delay-4">
+                <i class="fas fa-network-wired"></i>
+                <h3>NIC Network Backbone</h3>
+                <div class="status"><span class="green-dot"></span> 10 Gbps redundant link</div>
+                <div class="comment-placeholder" style="background: #e0ebf9;">
+                    <i class="fas fa-satellite-dish"></i> MPLS backup | BGP anycast | Points of presence: 4 (illustrative)
+                </div>
+            </div>
+        </div>
+
+        <!-- NETWORK CONNECTIONS + BACKEND PLACEHOLDERS -->
+        <div class="network-row">
+            <div class="net-card animate-fade-up delay-2">
+                <i class="fas fa-server"></i>
+                <h3>Data Center (NIC, Delhi)</h3>
+                <div class="comment">// illustrative backend: primary cluster k8s (etcd) • virtual firewall • postgres replication • Redis cache • msg queue (Kafka)</div>
+            </div>
+            
+            <div class="net-card animate-fade-up delay-3">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <h3>DR Site (MeitY, Hyderabad)</h3>
+                <div class="comment">// illustrative DR: cross-region async • VPN IPSec • last failover drill: 12 Sept 2025 • RPO: 15 min</div>
+            </div>
+            
+            <div class="net-card animate-fade-up delay-4">
+                <i class="fas fa-shield-virus"></i>
+                <h3>Security Operations Center</h3>
+                <div class="comment">// illustrative SIEM: splunk • SOAR • 24x7 IR • 4 alerts today (benign) • EDR status: healthy</div>
+            </div>
+        </div>
+
+        <!-- ADDITIONAL GOVT OFFICIALS / TEAM -->
+        <h2 class="section-title">Our Leadership & Officials</h2>
+        <div class="team-grid">
+            <div class="team-member animate-fade-up delay-1">
+                <div class="avatar">
+                    <img src="assets/images/officials/gupta.svg" alt="Ravi Gupta" onerror="this.src='assets/images/placeholders/official4.png'">
+                </div>
+                <h4>Ravi Gupta, IAS</h4>
+                <p>Additional Secretary (Infra)</p>
+                <i class="fas fa-certificate" style="color: #ff9933;"></i>
+            </div>
+            
+            <div class="team-member animate-fade-up delay-2">
+                <div class="avatar">
+                    <img src="assets/images/officials/sinha.svg" alt="Dr. Sanjay Sinha" onerror="this.src='assets/images/placeholders/official5.png'">
+                </div>
+                <h4>Dr. Sanjay Sinha</h4>
+                <p>Director (Cyber Security)</p>
+            </div>
+            
+            <div class="team-member animate-fade-up delay-3">
+                <div class="avatar">
+                    <img src="assets/images/officials/nair.svg" alt="Anjali Nair" onerror="this.src='assets/images/placeholders/official6.png'">
+                </div>
+                <h4>Anjali Nair</h4>
+                <p>Sr. Network Architect</p>
+            </div>
+            
+            <div class="team-member animate-fade-up delay-4">
+                <div class="avatar">
+                    <img src="assets/images/officials/patil.svg" alt="Vinayak Patil" onerror="this.src='assets/images/placeholders/official7.png'">
+                </div>
+                <h4>Vinayak Patil</h4>
+                <p>Joint Director (IT)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-col">
+                <h4>Ministry of Digital Infrastructure</h4>
+                <p>NIC Bhavan, CGO Complex, New Delhi-110003</p>
+                <div class="network-badge"><i class="fas fa-shield"></i> Secure .gov.in</div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Network & Security</h4>
+                <div class="backend-comment">
+                    <i class="fas fa-circle-nodes"></i> BGP upstream: AS55866 (illustrative) <br>
+                    <i class="fas fa-lock"></i> IPSEC tunnel active to all states (illustrative) <br>
+                    <i class="fas fa-code"></i> /* SSL cert: SHA256withRSA, valid till 2026 (illustrative) */
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Backend Integration Points</h4>
+                <div class="backend-comment">
+                    🔹 API GW: (internal endpoint, illustrative) <br>
+                    🔹 e-office integration (SOAP) <br>
+                    🔹 Kafka event bus: citizen-feedback <br>
+                    🔹 Database: Oracle RAC + PostgreSQL (PGP encrypted, illustrative)
+                </div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <i class="fas fa-copyright"></i> 2025 Ministry of Digital Infrastructure. 
+            <span class="prototype-badge"><i class="fas fa-paint-brush"></i> Conceptual UI/UX + architecture prototype — Backend endpoints and security notes are placeholders.</span>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
