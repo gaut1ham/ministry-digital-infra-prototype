@@ -535,7 +535,39 @@ body {
         font-size: 1.5rem;
     }
 }
+/* Add to assets/css/styles.css */
+.placeholder-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+/* Fallback styling when image fails to load */
+.placeholder-img img.error-fallback {
+    display: none;
+}
+
+.placeholder-img.img-fallback {
+    background: linear-gradient(145deg, #bdd3f0, #8bb0da);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: #1e3c72;
+}
+
+.avatar img.error-fallback {
+    display: none;
+}
+
+.avatar.fallback {
+    background: #ceddec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.5rem;
+    color: #1e3c72;
+}
 /* ---------- UTILITY CLASSES ---------- */
 .text-center { text-align: center; }
 .mt-2 { margin-top: 20px; }
