@@ -1,0 +1,550 @@
+/* ===============================================
+   MINISTRY OF DIGITAL INFRASTRUCTURE - STYLESHEET
+   Conceptual UI/UX + architecture prototype
+   All security/backend comments are placeholders
+   =============================================== */
+
+/* ---------- CSS RESET & BASE ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(145deg, #f0f5ff 0%, #ffffff 100%);
+    color: #1e2b4f;
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+/* ---------- CONTAINER ---------- */
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ---------- ANIMATIONS & KEYFRAMES ---------- */
+@keyframes fadeSlideUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowPulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 102, 204, 0.7); }
+    70% { box-shadow: 0 0 12px 6px rgba(0, 102, 204, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 102, 204, 0); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-fade-up {
+    animation: fadeSlideUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    opacity: 0;
+}
+
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+.delay-4 { animation-delay: 0.4s; }
+.delay-5 { animation-delay: 0.5s; }
+
+/* ---------- TOP BAND ---------- */
+.top-band {
+    background: #1e3c72;
+    color: white;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    border-bottom: 3px solid #ff9933;
+}
+
+.top-band .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.emblem-gov {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.emblem-icon {
+    height: 40px;
+    width: auto;
+}
+
+.emblem-gov span {
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.security-badge {
+    background: #163a5c;
+    padding: 6px 16px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #4d7eb3;
+    animation: glowPulse 2.5s infinite;
+}
+
+.security-badge i {
+    color: #7ef0ba;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,20,50,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(6px);
+    background: rgba(255,255,255,0.9);
+    border-bottom: 1px solid #e9ecf5;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ministry-name h1 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #1e3c72, #2b4a7a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ministry-name p {
+    font-size: 0.8rem;
+    color: #2c3e5c;
+    letter-spacing: 0.3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    font-weight: 500;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1e2b4f;
+    font-size: 1rem;
+    transition: 0.2s;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+}
+
+.nav-links a:hover {
+    border-bottom-color: #ff9933;
+    color: #1e3c72;
+}
+
+/* ---------- HERO SECTION ---------- */
+.hero {
+    padding: 40px 0 20px;
+}
+
+.hero-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1 1 350px;
+}
+
+.hero-content h2 {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    background: linear-gradient(145deg, #13294b, #22427a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-content .badge-gov {
+    background: #e7f0ff;
+    display: inline-block;
+    padding: 6px 18px;
+    border-radius: 30px;
+    color: #0047a0;
+    font-weight: 600;
+    margin: 20px 0 12px;
+    border: 1px dashed #aac3e0;
+}
+
+/* ---------- OFFICIALS CARDS ---------- */
+.officials-grid {
+    flex: 1 1 350px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.official-card {
+    background: white;
+    padding: 24px 20px 20px 20px;
+    border-radius: 32px;
+    box-shadow: 0 20px 30px -10px rgba(0,35,75,0.15);
+    text-align: center;
+    width: 170px;
+    transition: all 0.25s ease;
+    border: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(4px);
+    animation: float 5s ease-in-out infinite;
+}
+
+.official-card:hover {
+    transform: scale(1.02);
+    border-color: #ff9933;
+}
+
+.placeholder-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 12px;
+    overflow: hidden;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.placeholder-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.official-card h4 {
+    font-weight: 700;
+    margin: 10px 0 4px;
+    font-size: 1rem;
+}
+
+.official-card p {
+    font-size: 0.8rem;
+    color: #2e4b74;
+}
+
+/* ---------- COMMENT PLACEHOLDERS ---------- */
+.comment-placeholder {
+    background: #eef3fc;
+    padding: 12px 16px;
+    border-radius: 28px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.8rem;
+    color: #004070;
+    margin-top: 20px;
+    border: 1px dashed #6c9bd2;
+    word-break: break-word;
+}
+
+/* ---------- SECURITY DASHBOARD ---------- */
+.security-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 50px 0 30px;
+    justify-content: center;
+}
+
+.security-card {
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0,70,140,0.15);
+    border-radius: 36px;
+    padding: 28px 22px;
+    flex: 1 1 200px;
+    min-width: 250px;
+    box-shadow: 0 15px 30px -8px rgba(17, 54, 97, 0.12);
+    transition: 0.2s;
+    border-top: 4px solid #1e3c72;
+}
+
+.security-card i {
+    font-size: 2.4rem;
+    color: #174682;
+    margin-bottom: 15px;
+}
+
+.security-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+}
+
+.security-card .status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 14px 0 8px;
+    font-weight: 500;
+}
+
+.green-dot {
+    width: 12px;
+    height: 12px;
+    background: #2acb6e;
+    border-radius: 50%;
+    display: inline-block;
+    animation: glowPulse 1.5s infinite;
+}
+
+/* ---------- NETWORK CARDS ---------- */
+.network-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.net-card {
+    background: #102a41;
+    color: white;
+    padding: 24px;
+    border-radius: 24px;
+    flex: 1 1 260px;
+    min-width: 280px;
+    border-left: 6px solid #ff9933;
+    box-shadow: 0 18px 25px -10px #040c16;
+}
+
+.net-card i {
+    font-size: 2rem;
+    color: #ffb347;
+    margin-bottom: 12px;
+}
+
+.net-card .comment {
+    color: #bdd9ff;
+    background: #1e3f60;
+    padding: 10px;
+    border-radius: 16px;
+    margin-top: 16px;
+    font-size: 0.85rem;
+    font-family: monospace;
+}
+
+/* ---------- TEAM SECTION ---------- */
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 60px 0 30px;
+    color: #13294b;
+    border-left: 12px solid #ff9933;
+    padding-left: 24px;
+}
+
+.team-grid {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.team-member {
+    background: white;
+    border-radius: 32px;
+    padding: 26px 20px;
+    text-align: center;
+    flex: 1 1 180px;
+    min-width: 200px;
+    box-shadow: 0 10px 20px rgba(0, 30, 70, 0.08);
+    transition: 0.2s;
+    border: 1px solid white;
+}
+
+.team-member:hover {
+    border-color: #ff9933;
+    transform: translateY(-5px);
+}
+
+.team-member .avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    overflow: hidden;
+    border: 3px solid #e6f0ff;
+}
+
+.team-member .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+    background: #0b2137;
+    color: #ccdbe9;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+    border-top: 5px solid #ff9933;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 1 1 200px;
+    min-width: 220px;
+}
+
+.footer h4 {
+    color: white;
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.network-badge {
+    background: #143450;
+    padding: 12px 16px;
+    border-radius: 40px;
+    display: inline-block;
+    margin: 5px 0;
+    border: 1px solid #2e6191;
+}
+
+.backend-comment {
+    background: #1d334d;
+    padding: 16px;
+    border-radius: 20px;
+    font-family: monospace;
+    border-left: 3px solid #ff9933;
+    line-height: 1.8;
+    font-size: 0.9rem;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 40px;
+    color: #98b2cc;
+    font-size: 0.9rem;
+    border-top: 1px solid #1f3d5a;
+    padding-top: 20px;
+}
+
+.prototype-badge {
+    background: #2d4b6e;
+    color: #ffd966;
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    border-radius: 30px;
+    display: inline-block;
+    border: 1px solid #ffb347;
+    margin-left: 12px;
+}
+
+/* ---------- GRAPHIC WAVE ---------- */
+.graphic-wave {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ff9933" fill-opacity="0.1" d="M0,160L48,176C96,192,192,224,288,213.3C384,203,480,149,576,154.7C672,160,768,224,864,224C960,224,1056,160,1152,133.3C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"/></svg>') no-repeat bottom;
+    background-size: cover;
+    height: 80px;
+    opacity: 0.4;
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .security-dashboard {
+        flex-direction: column;
+    }
+    
+    .security-card {
+        width: 100%;
+    }
+    
+    .team-grid {
+        justify-content: center;
+    }
+    
+    .footer .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .top-band .container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .ministry-name h1 {
+        font-size: 1.2rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+    
+    .official-card {
+        width: 140px;
+        padding: 15px;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+}
+
+/* ---------- UTILITY CLASSES ---------- */
+.text-center { text-align: center; }
+.mt-2 { margin-top: 20px; }
+.mb-2 { margin-bottom: 20px; }
+.hidden { display: none; }
+
+/* ---------- PRINT STYLES ---------- */
+@media print {
+    .navbar, .footer, .graphic-wave {
+        display: none;
+    }
+}
