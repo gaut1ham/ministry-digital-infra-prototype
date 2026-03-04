@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <!-- ===============================================
+         Government of India Emblem (Conceptual/Stylized)
+         For prototype demonstration only
+         Actual Ashoka Emblem should be used in production
+         =============================================== -->
+    
+    <!-- Lion Capital (simplified for prototype) -->
+    <g transform="translate(50,45)">
+        <!-- Platform/base -->
+        <rect x="-20" y="20" width="40" height="5" fill="#8B5A2B" rx="2"/>
+        
+        <!-- Abacus/cylinder -->
+        <rect x="-15" y="10" width="30" height="10" fill="#C19A6B" rx="3"/>
+        
+        <!-- Lions (simplified representation) -->
+        <!-- Lion 1 - front facing -->
+        <circle cx="0" cy="-10" r="8" fill="#DAA520"/>
+        <circle cx="-4" cy="-14" r="2" fill="#333"/>
+        <circle cx="4" cy="-14" r="2" fill="#333"/>
+        <path d="M -3,-5 Q 0,-2 3,-5" stroke="#333" stroke-width="2" fill="none"/>
+        
+        <!-- Lion 2 - left side (partial) -->
+        <circle cx="-12" cy="-8" r="6" fill="#DAA520"/>
+        
+        <!-- Lion 3 - right side (partial) -->
+        <circle cx="12" cy="-8" r="6" fill="#DAA520"/>
+        
+        <!-- Lion 4 - back (partial) -->
+        <circle cx="0" cy="0" r="5" fill="#DAA520" opacity="0.7"/>
+        
+        <!-- Wheel (Dharmachakra) on top -->
+        <circle cx="0" cy="-25" r="8" fill="#8B4513" stroke="#FFD700" stroke-width="2"/>
+        <circle cx="0" cy="-25" r="5" fill="#FFD700" stroke="#8B4513" stroke-width="1"/>
+        <!-- Spokes -->
+        <line x1="0" y1="-33" x2="0" y2="-17" stroke="#FFD700" stroke-width="1"/>
+        <line x1="-8" y1="-25" x2="8" y2="-25" stroke="#FFD700" stroke-width="1"/>
+        <line x1="-5.6" y1="-30.6" x2="5.6" y2="-19.4" stroke="#FFD700" stroke-width="1"/>
+        <line x1="5.6" y1="-30.6" x2="-5.6" y2="-19.4" stroke="#FFD700" stroke-width="1"/>
+    </g>
+    
+    <!-- Ashoka Chakra (simplified) -->
+    <g transform="translate(50,85)">
+        <circle cx="0" cy="0" r="10" fill="none" stroke="#000080" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="8" fill="none" stroke="#000080" stroke-width="0.5"/>
+        <!-- 24 spokes (simplified to 12 for clarity) -->
+        <line x1="0" y1="-10" x2="0" y2="10" stroke="#000080" stroke-width="0.5"/>
+        <line x1="-10" y1="0" x2="10" y2="0" stroke="#000080" stroke-width="0.5"/>
+        <line x1="-7" y1="-7" x2="7" y2="7" stroke="#000080" stroke-width="0.5"/>
+        <line x1="7" y1="-7" x2="-7" y2="7" stroke="#000080" stroke-width="0.5"/>
+        <line x1="-3.8" y1="-9.2" x2="3.8" y2="9.2" stroke="#000080" stroke-width="0.5"/>
+        <line x1="3.8" y1="-9.2" x2="-3.8" y2="9.2" stroke="#000080" stroke-width="0.5"/>
+        <line x1="-9.2" y1="-3.8" x2="9.2" y2="3.8" stroke="#000080" stroke-width="0.5"/>
+        <line x1="9.2" y1="-3.8" x2="-9.2" y2="3.8" stroke="#000080" stroke-width="0.5"/>
+    </g>
+    
+    <!-- "Satyameva Jayate" banner -->
+    <text x="50" y="98" font-family="Arial" font-size="6" text-anchor="middle" fill="#333" font-weight="bold">सत्यमेव जयते</text>
+    
+    <!-- ===============================================
+         NOTES FOR PRODUCTION:
+         1. Replace with official Ashoka Emblem SVG from NIC
+         2. Ensure correct proportions per Flag Code of India
+         3. Add appropriate ARIA labels for accessibility
+         4. Use government-approved color codes:
+            - Saffron: #FF9933
+            - Green: #138808
+            - Navy Blue: #000080
+         =============================================== -->
+    
+    <!-- Accessibility -->
+    <title>Government of India Emblem - Ashoka Lion Capital</title>
+    <desc>Simplified conceptual representation of the State Emblem of India for prototype demonstration</desc>
+</svg>
