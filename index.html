@@ -3,25 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ministry of Digital Infrastructure | Government of India</title>
-    
+    <title>SecureGov Infrastructure Prototype | Conceptual Architecture Project</title>
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    
+
     <!-- Font Awesome (for icons) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+
     <!-- Google Fonts: Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- PROMINENT DISCLAIMER BANNER — always visible, not buried in footer -->
+    <div style="background:#b8121a; color:#fff; text-align:center; padding:12px 16px; font-weight:600; font-size:0.95rem; letter-spacing:0.3px;">
+        ⚠️ CONCEPTUAL STUDENT PROJECT — This is a personal systems-design prototype. It is <u>not affiliated with, endorsed by, or representative of any government or government agency</u>. All names, roles, and organizations shown are fictional and illustrative only.
+    </div>
+
     <!-- TOP BAND with security placeholder -->
     <div class="top-band">
         <div class="container">
             <div class="emblem-gov">
-                <!-- Ashoka Stambh image -->
-                <img src="assets/images/ashokastambh.png" alt="Government of India Emblem - Ashoka Stambh" class="emblem-icon" style="height: 45px; width: auto;">
-                <span>भारत सरकार | GOVERNMENT OF INDIA</span>
+                <i class="fas fa-shield-halved" style="font-size: 1.8rem; color:#1e3c72;"></i>
+                <span>SECUREGOV | INFRASTRUCTURE DESIGN PROTOTYPE</span>
             </div>
             <div class="security-badge">
                 <i class="fas fa-shield-halved"></i>
@@ -37,8 +42,8 @@
             <div class="logo-area">
                 <i class="fas fa-landmark" style="font-size: 2.8rem; color: #1e3c72;"></i>
                 <div class="ministry-name">
-                    <h1>Ministry of Digital Infrastructure</h1>
-                    <p>सूचना एवं प्रौद्योगिकी विभाग | Innovation & Security Division</p>
+                    <h1>SecureGov Digital Infrastructure Prototype</h1>
+                    <p>A Conceptual Architecture &amp; Security Design Project</p>
                 </div>
             </div>
             <div class="nav-links">
@@ -54,48 +59,39 @@
     <div class="graphic-wave"></div>
 
     <div class="container">
-        <!-- HERO SECTION with officials pictures -->
+        <!-- HERO SECTION -->
         <div class="hero">
             <div class="hero-grid">
                 <div class="hero-content animate-fade-up">
-                    <span class="badge-gov"><i class="fas fa-indian-rupee-sign"></i> Digital India • सेवा परक</span>
-                    <h2>Secure, Scalable, <br>Citizen-First Governance</h2>
-                    <p style="margin: 18px 0; max-width: 500px;">Integration of next-gen security protocols, AI firewalls, and high-availability networks across all stacks.</p>
-                    
+                    <span class="badge-gov"><i class="fas fa-diagram-project"></i> Student Systems-Design Project</span>
+                    <h2>Secure, Scalable <br>National-Scale Infrastructure — A Design Exercise</h2>
+                    <p style="margin: 18px 0; max-width: 500px;">A conceptual exploration of security protocols, network architecture, and disaster recovery design for large-scale digital systems, built as a self-directed learning project.</p>
+
                     <!-- BACKEND INTEGRATION PLACEHOLDER (illustrative) -->
                     <div class="comment-placeholder">
-                        <i class="fas fa-database"></i> 
-                        <strong>// BACKEND ENDPOINT (illustrative):</strong> /api/v1/health | DB: postgresql://gov-db.internal | Redis cache active | JWT validator 🔒
+                        <i class="fas fa-database"></i>
+                        <strong>// BACKEND ENDPOINT (illustrative, non-functional):</strong> /api/v1/health | DB: postgresql (example) | Redis cache (example) | JWT validator concept 🔒
                     </div>
                 </div>
-                
+
                 <div class="officials-grid">
-                    <!-- Shri Arvind Singh (Male) -->
+                    <!-- Replaced fake officials with abstract design-role cards — no real names, titles, or photos -->
                     <div class="official-card animate-fade-up delay-1">
-                        <div class="placeholder-img">
-                            <img src="assets/images/officials/photo123.jpg" alt="Shri Arvind Singh" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-user-tie\'></i>'; this.parentElement.classList.add('img-fallback');">
-                        </div>
-                        <h4>Shri. Arvind Singh</h4>
-                        <p>Minister of State (DI)</p>
-                        <i class="fas fa-verified" style="color: #1e7e34;"></i>
+                        <div class="placeholder-img img-fallback"><i class="fas fa-shield-halved"></i></div>
+                        <h4>Security Architecture</h4>
+                        <p>Design Role (Hypothetical)</p>
                     </div>
-                    
-                    <!-- Dr. Meena Sharma (Female) -->
+
                     <div class="official-card animate-fade-up delay-2">
-                        <div class="placeholder-img">
-                            <img src="assets/images/officials/photo321.jpg" alt="Dr. Meena Sharma" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-user-graduate\'></i>'; this.parentElement.classList.add('img-fallback');">
-                        </div>
-                        <h4>Dr. Meena Sharma</h4>
-                        <p>Secretary (Technology)</p>
+                        <div class="placeholder-img img-fallback"><i class="fas fa-network-wired"></i></div>
+                        <h4>Network &amp; Systems</h4>
+                        <p>Design Role (Hypothetical)</p>
                     </div>
-                    
-                    <!-- Ms. Neelam Desai (Female) -->
+
                     <div class="official-card animate-fade-up delay-3">
-                        <div class="placeholder-img">
-                            <img src="assets/images/officials/photo321.jpg" alt="Ms. Neelam Desai" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-user-nurse\'></i>'; this.parentElement.classList.add('img-fallback');">
-                        </div>
-                        <h4>Ms. Neelam Desai</h4>
-                        <p>Joint Secy. (Network Ops)</p>
+                        <div class="placeholder-img img-fallback"><i class="fas fa-server"></i></div>
+                        <h4>Infrastructure Ops</h4>
+                        <p>Design Role (Hypothetical)</p>
                     </div>
                 </div>
             </div>
@@ -106,25 +102,25 @@
             <div class="security-card animate-fade-up delay-2">
                 <i class="fas fa-shield-halved"></i>
                 <h3>Web Application Firewall</h3>
-                <div class="status"><span class="green-dot"></span> Active - 0 threats blocked today</div>
+                <div class="status"><span class="green-dot"></span> Concept status: Active — 0 threats blocked today (illustrative)</div>
                 <div class="comment-placeholder" style="background: #e0ebf9;">
                     <i class="fas fa-cloud"></i> WAF + rate limiting: 1000 req/min | OWASP rules enabled (illustrative config)
                 </div>
             </div>
-            
+
             <div class="security-card animate-fade-up delay-3">
                 <i class="fas fa-key"></i>
-                <h3>PKI & Authentication</h3>
-                <div class="status"><span class="green-dot"></span> 2FA enabled for all officials</div>
+                <h3>PKI &amp; Authentication</h3>
+                <div class="status"><span class="green-dot"></span> Concept status: 2FA modeled for all admin roles</div>
                 <div class="comment-placeholder" style="background: #e0ebf9;">
-                    <i class="fas fa-id-card"></i> Smart-card integration | OAuth 2.0 / OpenID Connect (illustrative)
+                    <i class="fas fa-id-card"></i> Smart-card integration concept | OAuth 2.0 / OpenID Connect (illustrative)
                 </div>
             </div>
-            
+
             <div class="security-card animate-fade-up delay-4">
                 <i class="fas fa-network-wired"></i>
-                <h3>NIC Network Backbone</h3>
-                <div class="status"><span class="green-dot"></span> 10 Gbps redundant link</div>
+                <h3>Redundant Network Backbone</h3>
+                <div class="status"><span class="green-dot"></span> Concept status: 10 Gbps redundant link (illustrative)</div>
                 <div class="comment-placeholder" style="background: #e0ebf9;">
                     <i class="fas fa-satellite-dish"></i> MPLS backup | BGP anycast | Points of presence: 4 (illustrative)
                 </div>
@@ -135,57 +131,48 @@
         <div class="network-row">
             <div class="net-card animate-fade-up delay-2">
                 <i class="fas fa-server"></i>
-                <h3>Data Center (NIC, Delhi)</h3>
+                <h3>Primary Data Center (Hypothetical Region A)</h3>
                 <div class="comment">// illustrative backend: primary cluster k8s (etcd) • virtual firewall • postgres replication • Redis cache • msg queue (Kafka)</div>
             </div>
-            
+
             <div class="net-card animate-fade-up delay-3">
                 <i class="fas fa-cloud-upload-alt"></i>
-                <h3>DR Site (MeitY, Hyderabad)</h3>
-                <div class="comment">// illustrative DR: cross-region async • VPN IPSec • last failover drill: 12 Sept 2025 • RPO: 15 min</div>
+                <h3>Disaster Recovery Site (Hypothetical Region B)</h3>
+                <div class="comment">// illustrative DR: cross-region async • VPN IPSec • example failover drill logged • RPO target: 15 min</div>
             </div>
-            
+
             <div class="net-card animate-fade-up delay-4">
                 <i class="fas fa-shield-virus"></i>
-                <h3>Security Operations Center</h3>
-                <div class="comment">// illustrative SIEM: splunk • SOAR • 24x7 IR • 4 alerts today (benign) • EDR status: healthy</div>
+                <h3>Security Operations Center (Concept)</h3>
+                <div class="comment">// illustrative SIEM: log aggregation • SOAR concept • 24x7 IR model • alert triage flow • EDR status: healthy</div>
             </div>
         </div>
 
-        <!-- ADDITIONAL GOVT OFFICIALS / TEAM -->
-        <h2 class="section-title">Our Leadership & Officials</h2>
+        <!-- DESIGN PRINCIPLES (replaces the fake "Leadership & Officials" section) -->
+        <h2 class="section-title">Design Principles Behind This Prototype</h2>
         <div class="team-grid">
             <div class="team-member animate-fade-up delay-1">
-                <div class="avatar">
-                    <img src="assets/images/officials/photo123.jpg" alt="Ravi Gupta" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-user-tie\'></i>'; this.parentElement.classList.add('fallback');">
-                </div>
-                <h4>Ravi Gupta, IAS</h4>
-                <p>Additional Secretary (Infra)</p>
-                <i class="fas fa-certificate" style="color: #ff9933;"></i>
+                <div class="avatar img-fallback"><i class="fas fa-lock"></i></div>
+                <h4>Defense in Depth</h4>
+                <p>Layered security controls, not a single point of failure</p>
             </div>
-            
+
             <div class="team-member animate-fade-up delay-2">
-                <div class="avatar">
-                    <img src="assets/images/officials/photo123.jpg" alt="Dr. Sanjay Sinha" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-user-md\'></i>'; this.parentElement.classList.add('fallback');">
-                </div>
-                <h4>Dr. Sanjay Sinha</h4>
-                <p>Director (Cyber Security)</p>
+                <div class="avatar img-fallback"><i class="fas fa-rotate"></i></div>
+                <h4>Resilience &amp; Recovery</h4>
+                <p>Modeled disaster recovery with defined RPO/RTO targets</p>
             </div>
-            
+
             <div class="team-member animate-fade-up delay-3">
-                <div class="avatar">
-                    <img src="assets/images/officials/photo321.jpg" alt="Anjali Nair" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-user-tie\'></i>'; this.parentElement.classList.add('fallback');">
-                </div>
-                <h4>Anjali Nair</h4>
-                <p>Sr. Network Architect</p>
+                <div class="avatar img-fallback"><i class="fas fa-diagram-project"></i></div>
+                <h4>Scalable Architecture</h4>
+                <p>Event-driven design using a Kafka-based message bus</p>
             </div>
-            
+
             <div class="team-member animate-fade-up delay-4">
-                <div class="avatar">
-                    <img src="assets/images/officials/photo123.jpg" alt="Vinayak Patil" onerror="this.onerror=null; this.parentElement.innerHTML='<i class=\'fas fa-user-cog\'></i>'; this.parentElement.classList.add('fallback');">
-                </div>
-                <h4>Vinayak Patil</h4>
-                <p>Joint Director (IT)</p>
+                <div class="avatar img-fallback"><i class="fas fa-eye"></i></div>
+                <h4>Observability</h4>
+                <p>SIEM/SOC concepts for monitoring and threat detection</p>
             </div>
         </div>
     </div>
@@ -194,34 +181,34 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-col">
-                <h4>Ministry of Digital Infrastructure</h4>
-                <p>NIC Bhavan, CGO Complex, New Delhi-110003</p>
-                <div class="network-badge"><i class="fas fa-shield"></i> Secure .gov.in</div>
+                <h4>SecureGov Infrastructure Prototype</h4>
+                <p>An independent student project exploring secure systems design</p>
+                <div class="network-badge"><i class="fas fa-shield"></i> Conceptual Project — No Live Backend</div>
             </div>
-            
+
             <div class="footer-col">
-                <h4>Network & Security</h4>
+                <h4>Network &amp; Security (Illustrative)</h4>
                 <div class="backend-comment">
-                    <i class="fas fa-circle-nodes"></i> BGP upstream: AS55866 (illustrative) <br>
-                    <i class="fas fa-lock"></i> IPSEC tunnel active to all states (illustrative) <br>
-                    <i class="fas fa-code"></i> /* SSL cert: SHA256withRSA, valid till 2026 (illustrative) */
+                    <i class="fas fa-circle-nodes"></i> Example BGP upstream design (illustrative) <br>
+                    <i class="fas fa-lock"></i> IPSEC tunnel concept across regions (illustrative) <br>
+                    <i class="fas fa-code"></i> /* Example TLS cert scheme: SHA256withRSA (illustrative) */
                 </div>
             </div>
-            
+
             <div class="footer-col">
-                <h4>Backend Integration Points</h4>
+                <h4>Backend Integration Points (Illustrative)</h4>
                 <div class="backend-comment">
-                    🔹 API GW: (internal endpoint, illustrative) <br>
-                    🔹 e-office integration (SOAP) <br>
-                    🔹 Kafka event bus: citizen-feedback <br>
-                    🔹 Database: Oracle RAC + PostgreSQL (PGP encrypted, illustrative)
+                    🔹 Example API gateway pattern (non-functional) <br>
+                    🔹 Example service integration (SOAP concept) <br>
+                    🔹 Kafka event bus: example citizen-feedback stream <br>
+                    🔹 Example database layer: relational + encrypted-at-rest concept
                 </div>
             </div>
         </div>
-        
+
         <div class="copyright">
-            <i class="fas fa-copyright"></i> 2025 Ministry of Digital Infrastructure. 
-            <span class="prototype-badge"><i class="fas fa-paint-brush"></i> Conceptual UI/UX + architecture prototype — Backend endpoints and security notes are placeholders.</span>
+            <i class="fas fa-copyright"></i> 2025 — Personal student project by Gautham Krishna B.
+            <span class="prototype-badge"><i class="fas fa-paint-brush"></i> Conceptual UI/UX + architecture prototype — not affiliated with any government. All backend endpoints, security notes, roles, and organizations shown are placeholders/fictional.</span>
         </div>
     </footer>
 
